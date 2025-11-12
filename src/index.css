@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Effets Futuristes Glow / Halo === */
+@keyframes pulse-glow-cyan {
+  0%, 100% {
+    text-shadow: 0 0 8px #22d3ee, 0 0 16px #22d3ee, 0 0 32px #22d3ee;
+  }
+  50% {
+    text-shadow: 0 0 4px #22d3ee, 0 0 8px #22d3ee, 0 0 16px #22d3ee;
+  }
+}
+
+@keyframes pulse-glow-pink {
+  0%, 100% {
+    text-shadow: 0 0 8px #ec4899, 0 0 16px #ec4899, 0 0 32px #ec4899;
+  }
+  50% {
+    text-shadow: 0 0 4px #ec4899, 0 0 8px #ec4899, 0 0 16px #ec4899;
+  }
+}
+
+.glow-cyan {
+  animation: pulse-glow-cyan 3s infinite alternate;
+}
+
+.glow-pink {
+  animation: pulse-glow-pink 3s infinite alternate;
+}
+
+@keyframes floating-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
